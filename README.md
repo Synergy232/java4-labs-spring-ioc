@@ -16,7 +16,7 @@ make the test pass
 
 ## Getting Started:
 
-This repo is actually 3 projects in one which confuses IntelliJ after you checkout the starter code. To avoid confusion we will use the command line for our initial Git operations.
+This repo is actually 3 projects in one which confuses IntelliJ after you checkout the starter code. To avoid problems, we will use the command line for our initial Git operations.
 
 Open a terminal and perform the following steps:
 
@@ -26,7 +26,7 @@ Open a terminal and perform the following steps:
 1. Change to the top directory for the lab: ``cd java4-labs-spring-ioc``
 1. Unlink it from the starter repository: ``git remote rm origin``
 1. Create a new, private repository in GitHub using [these procedures](https://help.github.com/en/articles/creating-a-new-repository)
-1. Once your repository is created, copy the commands shown in the **or push an existing repository from the command line** section shown in the "Code" tab of your new repository
+1. Once your repository is created, copy the commands shown in the "**or push an existing repository from the command line**" section shown in the "Code" tab of your new repository
 1. Paste the commands from the step above into the terminal supplying your GitHub user name and password when prompted
 1. Verify the push works by looking for output similar to the following:
 ```
@@ -41,7 +41,7 @@ To https://github.com/jeffrey-anderson/ioc-labs.git
 Branch 'master' set up to track remote branch 'master' from 'origin'.
 [CORP\andersja@a-2aj985axc5pyu java4-labs-spring-ioc]$
 ```
-1. Create a new branch changes you will make in this lab: ``git checkout -b code-changes-for-lab`` which should produce the following message:
+1. Create a new branch for the changes you will make in this lab: ``git checkout -b code-changes-for-lab`` which should produce the following message:
 ```
 Switched to a new branch 'code-changes-for-lab'
 ```
@@ -92,6 +92,24 @@ Finally, Choose "File" -> "Close Project" before starting on the next lab
 
 ## Submitting Your Work
 
+1. Open a terminal and change to the top level lab directory: ``cd $HOME/labs/java4-labs-spring-ioc``
+1. Push your code to GitHub: ``git push origin code-changes-for-lab``
+1. Enter your user name and password when prompted
+1. If your push was successful, you should see something like:
+```
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 268 bytes | 268.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'code-changes-for-lab' on GitHub by visiting:
+remote:      https://github.com/jeffrey-anderson/ioc-labs/pull/new/code-changes-for-lab
+remote:
+To https://github.com/jeffrey-anderson/ioc-labs.git
+ * [new branch]      code-changes-for-lab -> code-changes-for-lab
+```
 1. Create a pull request for your branch using [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#once-you-are-ready-to-submit-your-work-for-grading)
 1. Submit the assignment in Blackboard as described in [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#once-your-pull-request-is-created-and-i-am-added-as-a-reviewer)
 
