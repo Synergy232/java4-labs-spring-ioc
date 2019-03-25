@@ -16,8 +16,37 @@ make the test pass
 
 ## Getting Started:
 
-1. Copy the starter code from here into a new, private repository in your personal GitHub account using [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#copy-the-starter-code-into-a-new-private-repository-in-your-personal-github-account) substituting this repository URL ``https://github.com/jeff-anderson-cscc/java4-labs-spring-ioc.git`` for the one referenced in that document
-2. Create a new branch for your code changes as described in [these instructions](https://github.com/jeff-anderson-cscc/submitting-assignments-lab#before-you-start-coding)
+This repo is actually 3 projects in one which confuses IntelliJ after you checkout the starter code. To avoid confusion we will use the command line for our initial Git operations.
+
+Open a terminal and perform the following steps:
+
+1. If you don't have a "labs" directory, create one: ``mkdir ~/labs``
+1. Change to the labs directory: ``cd ~/labs``
+1. Clone this repository: ``git clone https://github.com/jeff-anderson-cscc/java4-labs-spring-ioc.git``
+1. Change to the top directory for the lab: ``cd java4-labs-spring-ioc``
+1. Unlink it from the starter repository: ``git remote rm origin``
+1. Create a new, private repository in GitHub using [these procedures](https://help.github.com/en/articles/creating-a-new-repository)
+1. Once your repository is created, copy the commands shown in the **or push an existing repository from the command line** section shown in the "Code" tab of your new repository
+1. Paste the commands from the step above into the terminal supplying your GitHub user name and password when prompted
+1. Verify the push works by looking for output similar to the following:
+```
+Counting objects: 88, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (56/56), done.
+Writing objects: 100% (88/88), 11.59 KiB | 2.90 MiB/s, done.
+Total 88 (delta 22), reused 0 (delta 0)
+remote: Resolving deltas: 100% (22/22), done.
+To https://github.com/jeffrey-anderson/ioc-labs.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+[CORP\andersja@a-2aj985axc5pyu java4-labs-spring-ioc]$
+```
+1. Create a new branch changes you will make in this lab: ``git checkout -b code-changes-for-lab`` which should produce the following message:
+```
+Switched to a new branch 'code-changes-for-lab'
+```
+
+**NOTE:** For simplicity, do a commit after each lab below but keep all your work on this one branch.
 
 ## Completing the Assignment
 
