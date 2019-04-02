@@ -41,7 +41,7 @@ public class AnnotationConfigTests {
     AppConfig appConfig = new AppConfig();
     Annotation annotation = appConfig.getClass().getAnnotation(org.springframework.context.annotation.ComponentScan.class);
     assertNotNull(annotation);
-    assertThat(annotation.toString(), CoreMatchers.containsString("basePackages=[edu.cscc.java4.spring.ioc.config]"));
+    assertThat(annotation.toString(), CoreMatchers.containsString("edu.cscc.java4.spring.ioc.config"));
   }
 
   @Test
